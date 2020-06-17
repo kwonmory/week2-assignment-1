@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import Counter from './Counter';
+import Page from './Page';
 
 export default function App() {
   const [count, setCount] = useState(0);
@@ -14,13 +14,10 @@ export default function App() {
   }
 
   return (
-    <div>
-      <p>Counter</p>
-      <Counter
-        count={count}
-        onClickMe={handleClickMe}
-        onClickNumber={handleClickNumber}
-      />
-    </div>
+    <Page
+      count={count}
+      handleClickMe={handleClickMe}
+      handleClickNumber={handleClickNumber}
+    />
   );
 }
