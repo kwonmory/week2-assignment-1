@@ -2,14 +2,13 @@ import React from 'react';
 
 import Counter from './Counter';
 
-export default function Page({ count, handleClickMe, handleClickNumber }) {
+export default function Page({ count, handleClick }) {
   return (
     <div>
       <p>Counter</p>
       <Counter
         count={count}
-        onClickMe={handleClickMe}
-        onClickNumber={handleClickNumber}
+        handleClick={handleClick}
       />
     </div>
   );

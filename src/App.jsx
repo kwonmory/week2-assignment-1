@@ -5,19 +5,14 @@ import Page from './Page';
 export default function App() {
   const [count, setCount] = useState(0);
 
-  function handleClickMe() {
-    setCount(count + 1);
-  }
-
-  function handleClickNumber(value) {
-    setCount(count + value);
+  function handleClick(increaseNumber) {
+    setCount(count + increaseNumber);
   }
 
   return (
     <Page
       count={count}
-      handleClickMe={handleClickMe}
-      handleClickNumber={handleClickNumber}
+      handleClick={handleClick}
     />
   );
 }
